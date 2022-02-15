@@ -2,7 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const dashboard = () => {
-	return <Link to="/landingPage">dashboard</Link>;
+	return (
+		<div>
+			<h1>DashBoard</h1>
+			<Link to="/landingPage" className="btn btn-hero">
+				LandingPage
+			</Link>
+		</div>
+	);
 };
 
 export default dashboard;
