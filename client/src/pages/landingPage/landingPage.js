@@ -1,7 +1,10 @@
-import mainImage from '../assets/images/main.svg';
-import { Logo, Wrapper } from '../components';
+import React from 'react';
+import mainImage from '../../assets/images/main.svg';
+import Wrapper from '../../assets/wrappers/landingPage';
+import { Logo } from '../../components';
+import { Link } from 'react-router-dom';
 
-const Landing = () => {
+const LandingPage = () => {
 	return (
 		<div>
 			<Wrapper>
@@ -20,14 +23,16 @@ const Landing = () => {
 							man bun cronut lomo. 8-bit XOXO forage tbh. Stumptown knausgaard narwhal fixie green juice
 							90's cornhole.
 						</p>
-						<button className="btn btn-hero">Login/Register</button>
+						<Link to="/register" className="btn btn-hero">
+							Login/Register
+						</Link>
 					</div>
 					{/* image */}
-					<img src={mainImage} alt="jon hunt" class="img main-img" />
+					<img src={mainImage} alt="jon hunt" className="img main-img" />
 				</div>
 			</Wrapper>
 		</div>
 	);
 };
 
-export default Landing;
+export default LandingPage;

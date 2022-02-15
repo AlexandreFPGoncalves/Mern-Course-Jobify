@@ -27,6 +27,9 @@ const Wrapper = styled.main`
 	.main-img {
 		display: none;
 	}
+	.test {
+		min-height: 100vh;
+	}
 	@media (min-width: 992px) {
 		.page {
 			grid-template-columns: 1fr 1fr;
