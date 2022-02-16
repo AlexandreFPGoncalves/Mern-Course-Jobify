@@ -1,4 +1,5 @@
 import Logo from './logo/logo';
-import Wrapper from '../assets/wrappers/landingPage';
+import FormRow from './formRow/formRow';
+import Alert from './alert/alert';
 
-export { Logo, Wrapper };
+export { Logo, FormRow, Alert };
